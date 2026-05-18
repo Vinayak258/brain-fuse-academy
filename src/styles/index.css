@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #050d1a;
+  --color-navy-900: #0A192F;
+  --color-navy-800: #112240;
+  --color-navy-700: #233554;
+
+  --color-royal-500: #3B82F6;
+  --color-royal-600: #2563EB;
+  --color-royal-700: #1D4ED8;
+
+  --color-gold-300: #FDE047;
+  --color-gold-400: #FACC15;
+  --color-gold-500: #D4AF37;
+  --color-gold-600: #B8962E;
+
+  --font-outfit: 'Outfit', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@utility text-gradient-gold {
+  background: linear-gradient(135deg, #FDE047, #D4AF37, #FACC15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@utility text-gradient-royal {
+  background: linear-gradient(135deg, #1D4ED8, #2563EB, #3B82F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@utility bg-gradient-navy {
+  background: linear-gradient(to bottom, #0A192F, #112240);
+}
+
+@utility bg-gradient-royal {
+  background: linear-gradient(135deg, #2563EB, #1D4ED8);
+}
+
+@utility font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+@utility font-inter {
+  font-family: 'Inter', sans-serif;
+}
